@@ -1,0 +1,9 @@
+<html>
+  <head></head>
+  <body>
+  <h2>Hey, check out photos!</h2>
+      {% for photo in photos %}
+        <a href="photo.php?photo={{ photo }}"><img src="photos/small/{{ photo }}.jpg"></a>
+      {% endfor %}
+  </body>
+</html>
